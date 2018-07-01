@@ -1,0 +1,109 @@
+---
+## Projeto Integrador
+title: "Atividade  5 - Projeto Integrador"
+author: "Larissa Fernandes"
+date: "30 de junho de 2018"
+output: html_document
+---
+#1. Para um vetor de 1 até 100, apresente o resultado final para as seguintes operações: adicionar a raiz quadrada do exponencial e dividir pela média do vetor.
+```{r}
+vetor1 <- c()
+
+for (i in 1:100) {
+  vetor1[i] = i + sqrt(exp(i))
+  y = mean(vetor1)
+  z = vt1/y
+}
+z
+
+```
+2. Para um vetor de 1 até 100, se o número for menor do que 20, exiba na tela pequeno. Se o número estiver entre 21 e 40, exiba médio. Se estiver entre 41 e 80, exiba grande. Se for igual a 100, exiba a palavra frango. Quando o número da vez for a sua idade, exiba Achei você!. Execute esta tarefa usando um loop for. (Obs.: Não use um número mágico para representar sua idade. Guarde-a num objeto chamado minha_idade.)
+
+```{r}
+minha_idade <- 29
+
+for (i in 1:100) {
+  if (i <= 20) {
+    print("Pequeno")
+  }
+  if (i > 20 & i <= 40 & i != minha_idade) {
+    print("Médio")
+  }
+  if (i > 40 & i <= 80) {
+    print("Grande")
+  }
+  if (i == minha_idade) {
+    print("Achei você!")
+  }
+  if (i == 100) {
+    print("Frango")
+  }
+}
+```
+3. Execute a mesma tarefa anterior usando um loop while.
+
+```{r}
+x = 0
+
+while (x <= 100) {
+  x = x + 1
+  if (x <= 20) {
+    print("Pequeno")
+  }
+  if (x > 20 & x <= 40 & x != minha_idade) {
+    print("Médio")
+  }
+  if (x > 40 & x <= 80) {
+    print("Grande")
+  }
+  if (x == minha_idade) {
+    print("Achei você!")
+  }
+  if (x == 100) {
+    print("Frango")
+  }
+}
+```
+4. Crie uma matriz vazia de tamanho 10 X 10. Usando for loops, preencha a matriz de modo que ela fique assim:
+```{r}
+lf <- matrix(nrow = 10, ncol = 10)
+lf
+
+for (i in 1:10) {
+  for (j in 1:10) {
+    lf[i,j] = i - j
+    
+  }
+}
+lf
+
+```
+# 5 - Crie uma matriz vazia de tamanho 10 X 10. Usando for loops, 
+# preencha a matriz de modo que ela fique assim:
+```{r}
+lf <- matrix(nrow = 10, ncol = 10)
+lf
+
+for (x in 1:10) {
+  for (z in 1:10) {
+   lf[x,z] = x + z
+    
+  }
+}
+lf
+```
+# 6 - Crie uma matriz vazia de tamanho 10 X 10. Usando for loops, 
+# preencha a matriz de modo que ela fique assim:
+```{r}
+lc <- matrix(nrow = 10, ncol = 10)
+lc
+
+for (a in 1:10) {
+  for (b in 1:10) {
+   lc[a,b] = (a+b)^2
+    
+  }
+}
+lc
+```
+
